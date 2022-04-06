@@ -1,0 +1,49 @@
+
+				// GRID
+				
+.faqMadre {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "header"
+						"main"
+						"footer";
+	.header {
+		grid-area: header;
+	}
+	.faqMain {
+		grid-area: main;
+	}
+	.footer {
+		grid-area: footer;
+	}
+}
+
+				// MAIN
+
+.faqMain {
+	display: flex;
+	justify-self: center;
+	width: 80vw;
+	padding: 4rem;
+	background-color: #FAF5F5;
+	h1 {
+		font-size: 2.9rem;
+		padding: 3rem;
+		text-transform: uppercase;
+	}
+	h2 {
+		margin: 2rem;
+		text-align: left;
+		font-size: 2rem;
+	}
+	div.border {
+		padding: 2rem;
+		border: 2px solid black;
+		background-color: #807641;
+		color: white;
+		text-align: justify;
+		margin-bottom: 5rem;
+	}
+}
+/* ---------------------------- */

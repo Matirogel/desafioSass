@@ -1,0 +1,74 @@
+
+				// GRID 
+
+.nosotrosMadre {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "header header"
+						"main aside"
+						"footer footer";
+	.header {
+		grid-area: header;
+	}
+	.tiendaNosotros {
+		grid-area: main;
+	}
+	.footer {
+		grid-area: footer;
+	}
+	.asideNosotros {
+		grid-area: aside;
+	}
+}
+
+/* ---------------------------- */
+
+				// MAIN
+
+.mainNosotros {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 4rem;
+	max-width: 100%;
+	h1 {
+		font-size: 2.9rem;
+		text-align: center;
+		padding: 3rem;
+		margin-bottom: 4rem;
+		text-transform: uppercase;
+		background-color: #696969;
+		color: #F8F2DB;
+	}
+	h2 {
+		font-size: 2rem;
+		padding-bottom: 3rem;
+		text-decoration: underline;
+	}
+	p {
+		text-align: justify;
+	}
+}
+
+/* ---------------------------- */
+
+				// ASIDE
+
+.asideNosotros {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	div {
+		border: 8px solid #8E7B38;
+		margin: 25rem 0;
+		margin-right: 2rem;
+		iframe {
+			 width: 30vw;
+			 height: 45rem;
+		}
+	}
+}
+
+/* ---------------------------- */

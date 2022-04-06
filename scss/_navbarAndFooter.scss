@@ -1,0 +1,33 @@
+							
+							// Nav
+
+.encabezado {
+	background-color: rgba(0,0,0,1);
+    .textNav {
+		display: block;
+    	padding: 0.5rem 1.5rem;
+    	color: #F3F3F3; 
+    	text-decoration: none;
+    	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+		&:hover {
+    		color: #C1A924;
+		}	
+	}	
+}
+                            // Footer
+
+footer {
+	color: #C1A924;
+	font-size: 1.3rem;
+	.h3Footer {
+		font-size: 1.75rem;
+		padding-bottom: 2rem;
+	}
+	.iconRedes {	
+		height: 5rem;
+		width: 5rem;
+	}
+}
+
+	
+	

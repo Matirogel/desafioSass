@@ -1,0 +1,113 @@
+
+
+@media (max-width: 500px) {
+
+				// TIENDA
+
+	.tiendaMain article h1 {
+    	font-size: 2rem;
+    }
+				// CONTACTO 
+
+	.mainContacto { 
+		padding: 4rem 0.5rem;
+		h1 {
+			font-size: 1.7rem;
+		}
+		.containerForm {
+			padding: 6rem 1rem;
+			margin-top: 5rem;
+			margin-bottom: 6rem;
+			.bntForm-propio {
+		 	   	font-size: 1rem;
+		    	padding: 0.7rem 3.5rem;
+		    	margin-top: 4rem;
+		    	border-radius: 4px;
+			}
+		}
+	}
+}
+
+@media (max-width: 620px) {
+
+				// INDEX
+
+	.servicio {
+		margin: 3px 0;
+	}
+
+				// PREGUNTAS FRECUENTES 
+
+	.faqMain {
+		padding: 0rem;
+		h1 {
+			font-size: 2.4rem;
+			text-align: center;
+		}
+		h2 {
+			margin: 0.5rem;
+			font-size: 1.5rem;
+		}
+	}
+}
+
+
+@media (min-width: 501px) and (max-width: 1100px) {
+
+				// CONTACTO 
+
+	.mainContacto {
+		padding: 4rem 7rem 7rem 7rem;
+	}
+}
+
+@media (max-width: 1100px) {
+
+
+				// INDEX
+	
+	.art2 .art2Container {
+		flex-direction: column;
+		padding-right: 0rem;
+		.servicioContainer{
+			width: auto;
+			.servicio {
+				width: 90vw;
+				margin: 30px 0;
+			}
+		}
+		.imgServicio img {	
+			width: 70vw;
+			height: auto;
+			margin: 4rem 0rem;
+		}
+	} 
+}
+
+
+
+@media (max-width: 1503px) {
+
+				// NOSOTROS
+
+	.nosotrosMadre {
+		grid-template-columns: 1fr;
+		grid-template-areas: "header"
+							"main"
+							"aside"
+							"footer";
+		.mainNosotros h2 {
+			font-size: 2rem;
+			padding-bottom: 1rem;
+			padding-top: 4rem;
+		}		
+		.asideNosotros div {
+			margin: 5rem 0;
+			margin-right: 0rem;
+			iframe {
+				 width: 80vw;
+				 height: 45rem;
+			}
+		}
+	}	
+}
