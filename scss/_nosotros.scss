@@ -30,21 +30,21 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	padding: 4rem;
+	@include m-p(0, 10rem 4rem);
 	max-width: 100%;
 	h1 {
 		font-size: 2.9rem;
 		text-align: center;
-		padding: 3rem;
+		@include m-p(x, 3rem);
 		margin-bottom: 4rem;
 		text-transform: uppercase;
-		background-color: #696969;
-		color: #F8F2DB;
+		background-color: map-get($map:$paleta,$key:'c5');
+		color: map-get($map:$paleta,$key:'c11');
 	}
 	h2 {
 		font-size: 2rem;
-		padding-bottom: 3rem;
-		text-decoration: underline;
+		@include m-p(0, 3rem 2rem);
+		font-weight: bold;
 	}
 	p {
 		text-align: justify;
@@ -61,8 +61,8 @@
 	align-items: center;
 	justify-content: space-around;
 	div {
-		border: 8px solid #8E7B38;
-		margin: 25rem 0;
+		border: 8px solid map-get($map:$paleta,$key:'c13');
+		@include m-p(25rem x, 0);
 		margin-right: 2rem;
 		iframe {
 			 width: 30vw;

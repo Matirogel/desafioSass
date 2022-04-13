@@ -9,18 +9,18 @@
     }
 				// CONTACTO 
 
-	.mainContacto { 
-		padding: 4rem 0.5rem;
+	.mainContacto {
+		@include m-p(0, 4rem 0.5rem);
 		h1 {
 			font-size: 1.7rem;
 		}
 		.containerForm {
-			padding: 6rem 1rem;
+			@include m-p(x, 6rem 1rem);
 			margin-top: 5rem;
 			margin-bottom: 6rem;
 			.bntForm-propio {
 		 	   	font-size: 1rem;
-		    	padding: 0.7rem 3.5rem;
+		       	@include m-p(x, 0.7rem 3.5rem);
 		    	margin-top: 4rem;
 		    	border-radius: 4px;
 			}
@@ -33,19 +33,19 @@
 				// INDEX
 
 	.servicio {
-		margin: 3px 0;
+		@include m-p(3px 0, 0);
 	}
 
 				// PREGUNTAS FRECUENTES 
 
-	.faqMain {
-		padding: 0rem;
+	.faqMain {		
+		@include m-p(0, 0);
 		h1 {
 			font-size: 2.4rem;
 			text-align: center;
 		}
 		h2 {
-			margin: 0.5rem;
+			@include m-p(0.5rem, 0);
 			font-size: 1.5rem;
 		}
 	}
@@ -57,7 +57,7 @@
 				// CONTACTO 
 
 	.mainContacto {
-		padding: 4rem 7rem 7rem 7rem;
+		@include m-p(0, 4rem 7rem 7rem 7rem);
 	}
 }
 
@@ -73,13 +73,13 @@
 			width: auto;
 			.servicio {
 				width: 90vw;
-				margin: 30px 0;
+				@include m-p(30px 0, 0);
 			}
 		}
 		.imgServicio img {	
 			width: 70vw;
 			height: auto;
-			margin: 4rem 0rem;
+			@include m-p(4rem 0, 0);
 		}
 	} 
 }
@@ -102,8 +102,7 @@
 			padding-top: 4rem;
 		}		
 		.asideNosotros div {
-			margin: 5rem 0;
-			margin-right: 0rem;
+			@include m-p(5rem 0, 0);
 			iframe {
 				 width: 80vw;
 				 height: 45rem;

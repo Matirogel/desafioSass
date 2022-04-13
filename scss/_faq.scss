@@ -25,25 +25,25 @@
 	display: flex;
 	justify-self: center;
 	width: 80vw;
-	padding: 4rem;
-	background-color: #FAF5F5;
+	@include m-p(0, 4rem);
+	background-color: map-get($map:$paleta,$key:'c2');
 	h1 {
 		font-size: 2.9rem;
-		padding: 3rem;
 		text-transform: uppercase;
+		@include m-p(0, 3rem);
 	}
 	h2 {
-		margin: 2rem;
 		text-align: left;
 		font-size: 2rem;
+		@include m-p(2rem, 0);
 	}
 	div.border {
-		padding: 2rem;
-		border: 2px solid black;
-		background-color: #807641;
+		border: 2px solid map-get($map:$paleta,$key:'c9');
+		background-color: map-get($map:$paleta,$key:'c12');
 		color: white;
 		text-align: justify;
 		margin-bottom: 5rem;
+		@include m-p(x, 2rem);
 	}
 }
 /* ---------------------------- */

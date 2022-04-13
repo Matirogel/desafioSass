@@ -30,23 +30,21 @@
 				// MAIN
 
 .tiendaMain article {
-	background-color: #E6E6E6;
-	padding: 5rem 0; 
+	background-color: map-get($map:$paleta,$key:'c3');
+	@include m-p(0, 5rem 0); 
 	h1 {
 		font-size: 2.9rem;
 		text-align: center;
-		padding: 3rem;
 		margin-bottom: 2rem;
-		background-color: #4C4C4C;
-		color: #FBF6D8;
+		background-color: map-get($map:$paleta,$key:'c6');
+		color: map-get($map:$paleta,$key:'c10');
 		text-transform: uppercase;
+		@include m-p(x, 3rem);
 	}
 	.productos {
-		display: flex;
-		flex-flow: wrap row;
-		justify-content: center;	
+		@extend .flex-row-center;
 		.borderCard {
-			border: 2px solid black;
+			border: 2px solid map-get($map:$paleta,$key:'c9');
 		}
 	}
 }
@@ -60,8 +58,7 @@
 	background-size: cover;
 }
 .divTienda {
-	background-image: url(../img/asideTienda.png);
-	background-size: cover;
+	@extend .asideTienda;
 }
 
 /* ---------------------------- */
