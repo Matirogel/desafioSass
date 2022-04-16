@@ -14,7 +14,7 @@ p, li {
 a {
   text-decoration: none; }
 
-.flex-row-center, .art1 .proDestacados, .art2 .art2Container .servicioContainer, .tiendaMain article .productos {
+.flex-row-center, .art2 .art2Container .servicioContainer, .tiendaMain article .productos {
   display: flex;
   flex-flow: row wrap;
   justify-content: center; }
@@ -64,17 +64,51 @@ footer {
     color: #FBF6D8;
     margin: 6.5rem 0;
     padding: 3rem; }
-  .art1 .proDestacados .categorias {
+  .art1 h3 {
+    font-size: 2.2rem;
+    font-weight: 500;
     text-align: center;
-    margin-bottom: 4rem; }
-    .art1 .proDestacados .categorias h3 {
-      font-size: 2rem;
+    background-color: #807641;
+    color: #EBEBEB;
+    margin: 4rem 15rem;
+    padding: 1.5rem 0; }
+  .art1 .cardGroup {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+    width: 80vw; }
+  .art1 .card-body {
+    background-color: #EBEBEB; }
+    .art1 .card-body h4 {
+      font-size: 1.7rem;
+      font-family: "Montserrat", sans-serif; }
+    .art1 .card-body p {
+      padding: 1rem 5rem;
+      font-size: 1.5rem; }
+    .art1 .card-body .btn-gold {
+      display: inline-block;
+      font-weight: 500;
+      line-height: 1.5;
       text-align: center;
-      margin: 2rem;
-      padding: 0; }
-    .art1 .proDestacados .categorias img {
-      width: 22rem;
-      height: 22rem; }
+      text-decoration: none;
+      vertical-align: middle;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      background-color: transparent;
+      border: 1px solid transparent;
+      padding: .375rem .75rem;
+      font-size: 1.1rem;
+      border-radius: .25rem;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+      color: #EBEBEB;
+      background-color: #B5923E;
+      border-color: #B5923E; }
+      .art1 .card-body .btn-gold:hover {
+        background-color: #807641;
+        border-color: #807641;
+        color: #EBEBEB; }
 
 .art2 {
   background-color: #E6E6E6;

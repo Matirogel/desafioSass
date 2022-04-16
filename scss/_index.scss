@@ -33,20 +33,58 @@
 			color: map-get($map:$paleta,$key:'c10');
 			@include m-p(6.5rem 0, 3rem);
 		}	
-		.proDestacados {
-			@extend .flex-row-center;
-			.categorias {
-				text-align: center;
-				margin-bottom: 4rem;
-				h3 {
-					font-size: 2rem;
-					text-align: center;
-					@include m-p(2rem, 0);
-				}
-				img {
-					width: 22rem;
-					height: 22rem;
-				}
+		h3 {
+			font-size: 2.2rem;
+			font-weight: 500;
+			text-align: center;
+			background-color: map-get($map:$paleta,$key:'c12');
+			color: map-get($map:$paleta,$key:'c1');
+			@include m-p(4rem 15rem, 1.5rem 0); 
+		}
+		.cardGroup {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 10rem;
+			width: 80vw;
+		}
+		.card-body {
+			background-color: map-get($map:$paleta,$key:'c1');
+			h4 {
+				font-size: 1.7rem;
+				font-family: $fontSec;
+			}
+			p {
+				padding: 1rem 5rem;
+				font-size: 1.5rem;
+			}
+			.btn-gold {
+			    display: inline-block;
+			    font-weight: 500;
+			    line-height: 1.5;
+			    text-align: center;
+			    text-decoration: none;
+			    vertical-align: middle;
+			    cursor: pointer;
+			    -webkit-user-select: none;
+			    -moz-user-select: none;
+			    user-select: none;
+			    background-color: transparent;
+			    border: 1px solid transparent;
+			    padding: .375rem .75rem;
+			    font-size: 1.1rem;
+			    border-radius: .25rem;
+			    transition: color .15s ease-in-out,
+			    background-color .15s ease-in-out,
+			    border-color .15s ease-in-out,
+			    box-shadow .15s ease-in-out;
+			    color: map-get($map:$paleta,$key:'c1');
+			    background-color: map-get($map:$paleta,$key:'c14');
+			    border-color: map-get($map:$paleta,$key:'c14');
+			    &:hover {
+				    background-color: map-get($map:$paleta,$key:'c12');
+			   		border-color: map-get($map:$paleta,$key:'c12');
+			   		color: map-get($map:$paleta,$key:'c1');
+			    }
 			}
 		}
 	}
