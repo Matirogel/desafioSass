@@ -36,6 +36,9 @@
 		    @include m-p(x, 1rem 8rem);
 		    border-radius: 4px;
 		}
+		label {
+			padding-left: 2.5rem;
+		}
 	}
 }
 

@@ -74,9 +74,8 @@ footer {
     padding: 1.5rem 0; }
   .art1 .cardGroup {
     display: flex;
-    justify-content: center;
-    margin-bottom: 10rem;
-    width: 80vw; }
+    width: 80vw;
+    margin: 0 auto 10rem; }
   .art1 .card-body {
     background-color: #EBEBEB; }
     .art1 .card-body h4 {
@@ -329,11 +328,18 @@ footer {
       margin: x;
       padding: 1rem 8rem;
       border-radius: 4px; }
+    .mainContacto .containerForm label {
+      padding-left: 2.5rem; }
 
 /* ---------------------------- */
 @media (max-width: 500px) {
-  .tiendaMain article h1 {
-    font-size: 2rem; }
+  .art1 .cardGroup {
+    display: flex;
+    width: 80vw; }
+  .tiendaMadre {
+    grid-template-columns: 10% 80% 10%; }
+    .tiendaMadre article h1 {
+      font-size: 2rem; }
   .mainContacto {
     margin: 0;
     padding: 4rem 0.5rem; }
@@ -349,7 +355,9 @@ footer {
         margin: x;
         padding: 0.7rem 3.5rem;
         margin-top: 4rem;
-        border-radius: 4px; } }
+        border-radius: 4px; }
+  .faqMain {
+    width: auto; } }
 
 @media (max-width: 620px) {
   .servicio {
@@ -372,6 +380,8 @@ footer {
     padding: 4rem 7rem 7rem 7rem; } }
 
 @media (max-width: 1100px) {
+  .art1 .card-body p {
+    padding: 1rem 1rem; }
   .art2 .art2Container {
     flex-direction: column;
     padding-right: 0rem; }

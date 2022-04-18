@@ -43,9 +43,8 @@
 		}
 		.cardGroup {
 			display: flex;
-			justify-content: center;
-			margin-bottom: 10rem;
 			width: 80vw;
+			margin: 0 auto 10rem;
 		}
 		.card-body {
 			background-color: map-get($map:$paleta,$key:'c1');
