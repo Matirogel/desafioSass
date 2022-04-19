@@ -1,2 +1,0 @@
-En cuanto a la parte de SEO se incluyeron <meta> description y keywords, arreglo de encabezados, agregados de textos "alt" en las imagenes, etc. en cada html.
-Para la parte de SASS se incluyo un mixin para padding y margin, un map con la paleta de colores utilizada y una clase para extend ubicados en "_common.scss" los cuales se utilizaron en diferentes partes de los HTML.
