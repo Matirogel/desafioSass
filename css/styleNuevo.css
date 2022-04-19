@@ -336,6 +336,12 @@ footer {
   .art1 .cardGroup {
     display: flex;
     width: 80vw; }
+  .art2 .art2Container .servicioContainer .servicio {
+    width: 90vw;
+    margin: x;
+    padding: 1rem 0.4rem; }
+  .art2 .art2Container .imgServicio img {
+    display: none; }
   .tiendaMadre {
     grid-template-columns: 10% 80% 10%; }
     .tiendaMadre article h1 {
@@ -360,6 +366,13 @@ footer {
     width: auto; } }
 
 @media (max-width: 620px) {
+  .art1 h3 {
+    margin: 4rem 0.5rem;
+    padding: 1.5rem 0; }
+  .art1 .cardGroup {
+    display: flex;
+    width: 100%;
+    margin: x 0; }
   .servicio {
     margin: 3px 0;
     padding: 0; }
@@ -390,7 +403,7 @@ footer {
       .art2 .art2Container .servicioContainer .servicio {
         width: 90vw;
         margin: 30px 0;
-        padding: 0; }
+        padding: x; }
     .art2 .art2Container .imgServicio img {
       width: 70vw;
       height: auto;
