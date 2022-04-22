@@ -1,5 +1,4 @@
 
-				// GRID 
 
 .homeMadre {
 	display: grid;
@@ -13,6 +12,95 @@
 	}
 	.homeMain {
 		grid-area: main;
+		.art1 {
+			margin-bottom: 10rem;
+			h1 {
+				font-size: 2.9rem;
+				text-align: center;
+				text-transform: uppercase;
+				background-color: map-get($map:$paleta,$key:'c5');
+				color: map-get($map:$paleta,$key:'c10');
+				@include m-p(6.5rem 0, 3rem);
+			}	
+			h3 {
+				font-size: 2.2rem;
+				font-weight: 500;
+				text-align: center;
+				background-color: map-get($map:$paleta,$key:'c12');
+				color: map-get($map:$paleta,$key:'c1');
+				@include m-p(4rem 15rem, 1.5rem 0); 
+			}
+			.cardGroup {
+				display: flex;
+				width: 80vw;
+				margin: 0 auto 10rem;
+			}
+			.card-body {
+				background-color: map-get($map:$paleta,$key:'c1');
+				h4 {
+					font-size: 1.7rem;
+					font-family: $fontSec;
+				}
+				p {
+					padding: 1rem 5rem;
+					font-size: 1.5rem;
+				}
+			}
+		}
+		.art2 {
+			background-color: map-get($map:$paleta,$key:'c3');
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 10rem;
+			h2 {
+				font-size: 2.9rem;
+				text-align: center;
+				text-transform: uppercase;
+				background-color: map-get($map:$paleta,$key:'c5');
+				color: map-get($map:$paleta,$key:'c10');
+				@include m-p(6.5rem 0, 3rem);
+			}	
+			.art2Container {
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				padding-right: 5rem;
+				.servicioContainer {
+					@extend .flex-row-center;
+					width: 100%;
+					.servicio {
+						width: 50%;
+						box-sizing: border-box;
+						border: solid 2px map-get($map:$paleta,$key:'c7');
+						background-image: url(../img/fondo/dorado.webp);
+						@include m-p(3rem 4rem, 2rem);
+						display:flex;
+						flex-direction: column;
+						box-shadow: 15px 10px 52px 6px rgba(102,87,38,0.3);
+							-webkit-box-shadow: 15px 10px 52px 6px rgba(102,87,38,0.3);
+							-moz-box-shadow: 15px 10px 52px 6px rgba(102,87,38,0.3);
+						h3 {
+							font-size: 2rem;
+							background-color: map-get($map:$paleta,$key:'c14');
+							color: map-get($map:$paleta,$key:'c2');
+							border-radius: .5rem;	
+							text-align: center;
+							font-family: $fontSec;
+							@include m-p(0, 0.5rem 0);
+						}
+						li {
+							list-style: circle;
+							margin-left: 3rem;
+						}
+					}
+				}
+				.imgServicio img {
+					width: 34vw;
+					height: auto;
+					border: 2px solid map-get($map:$paleta,$key:'c7');
+				}
+			}
+		}
 	}
 	.Footer {
 		grid-area: footer;
@@ -20,134 +108,3 @@
 }
 
 /* -------------------------- */
-
-				// MAIN 
-
-	.art1 {
-		margin-bottom: 10rem;
-		h2 {
-			font-size: 2.9rem;
-			text-align: center;
-			text-transform: uppercase;
-			background-color: map-get($map:$paleta,$key:'c5');
-			color: map-get($map:$paleta,$key:'c10');
-			@include m-p(6.5rem 0, 3rem);
-		}	
-		h3 {
-			font-size: 2.2rem;
-			font-weight: 500;
-			text-align: center;
-			background-color: map-get($map:$paleta,$key:'c12');
-			color: map-get($map:$paleta,$key:'c1');
-			@include m-p(4rem 15rem, 1.5rem 0); 
-		}
-		.cardGroup {
-			display: flex;
-			width: 80vw;
-			margin: 0 auto 10rem;
-		}
-		.card-body {
-			background-color: map-get($map:$paleta,$key:'c1');
-			h4 {
-				font-size: 1.7rem;
-				font-family: $fontSec;
-			}
-			p {
-				padding: 1rem 5rem;
-				font-size: 1.5rem;
-			}
-			.btn-gold {
-			    display: inline-block;
-			    font-weight: 500;
-			    line-height: 1.5;
-			    text-align: center;
-			    text-decoration: none;
-			    vertical-align: middle;
-			    cursor: pointer;
-			    -webkit-user-select: none;
-			    -moz-user-select: none;
-			    user-select: none;
-			    background-color: transparent;
-			    border: 1px solid transparent;
-			    padding: .375rem .75rem;
-			    font-size: 1.1rem;
-			    border-radius: .25rem;
-			    transition: color .15s ease-in-out,
-			    background-color .15s ease-in-out,
-			    border-color .15s ease-in-out,
-			    box-shadow .15s ease-in-out;
-			    color: map-get($map:$paleta,$key:'c1');
-			    background-color: map-get($map:$paleta,$key:'c14');
-			    border-color: map-get($map:$paleta,$key:'c14');
-			    &:hover {
-				    background-color: map-get($map:$paleta,$key:'c12');
-			   		border-color: map-get($map:$paleta,$key:'c12');
-			   		color: map-get($map:$paleta,$key:'c1');
-			    }
-			}
-		}
-	}
-
-	.art2 {
-		background-color: map-get($map:$paleta,$key:'c3');
-		display: flex;
-		flex-direction: column;
-		padding-bottom: 10rem;
-		h2 {
-			font-size: 2.9rem;
-			text-align: center;
-			text-transform: uppercase;
-			background-color: map-get($map:$paleta,$key:'c5');
-			color: map-get($map:$paleta,$key:'c10');
-			@include m-p(6.5rem 0, 3rem);
-		}	
-		.art2Container {
-			display: flex;
-			align-items: center;
-			justify-content: space-around;
-			padding-right: 5rem;
-			.servicioContainer {
-				@extend .flex-row-center;
-				width: 100%;
-				.servicio {
-					width: 50%;
-					box-sizing: border-box;
-					border: solid 2px map-get($map:$paleta,$key:'c7');
-					background-image: url(../img/fondo/dorado.webp);
-					@include m-p(3rem 4rem, 2rem);
-					display:flex;
-					flex-direction: column;
-					box-shadow: 15px 10px 52px 6px rgba(102,87,38,0.3);
-						-webkit-box-shadow: 15px 10px 52px 6px rgba(102,87,38,0.3);
-						-moz-box-shadow: 15px 10px 52px 6px rgba(102,87,38,0.3);
-					h3 {
-						font-size: 2rem;
-						background-color: map-get($map:$paleta,$key:'c14');
-						color: map-get($map:$paleta,$key:'c2');
-						border-radius: .5rem;	
-						text-align: center;
-						font-family: $fontSec;
-						@include m-p(0, 0.5rem 0);
-					}
-					li {
-						list-style: circle;
-						margin-left: 3rem;
-					}
-				}
-			}
-			.imgServicio img {
-				width: 34vw;
-				height: auto;
-				border: 2px solid map-get($map:$paleta,$key:'c7');
-			}
-		}
-	}
-
-
-
-
-
-
-
-
-
